@@ -29,7 +29,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "gatsby": "^5.0.0"
   },
   "repository": "https://github.com/sabertazimi/gatsby-remark-slug.git",
   "scripts": {
