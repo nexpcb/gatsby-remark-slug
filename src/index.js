@@ -1,10 +1,8 @@
-"use strict";
+import { visit } from 'unist-util-visit';
+import GithubSlugger from 'github-slugger';
+import { toString } from 'mdast-util-to-string'
 
-const visit = require('unist-util-visit');
-
-const slugs = require('github-slugger')();
-
-const toString = require('mdast-util-to-string');
+const slugs = GithubSlugger();
 
 module.exports = ({
   markdownAST
