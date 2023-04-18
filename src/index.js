@@ -4,9 +4,7 @@ import { toString } from 'mdast-util-to-string';
 
 const slugs = GithubSlugger();
 
-module.exports = ({
-  markdownAST
-}, pluginOptions = {}) => {
+export default function ({ markdownAST }, pluginOptions = {}) {
   slugs.reset();
   visit(markdownAST, 'heading', node => {
     const headingTag = `h${node.depth}`;
@@ -16,4 +14,4 @@ module.exports = ({
     node.value = `<${headingTag} id="${headingSlug}">${headingText}</${headingTag}>`;
   });
   return markdownAST;
-};
+}
