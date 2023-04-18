@@ -3,6 +3,7 @@
   "description": "Add slug `id` to h1~h6 elements",
   "version": "0.2.0",
   "author": "sabertazimi <sabertazimi@gmail.com>",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/sabertazimi/gatsby-remark-slug/issues"
   },
